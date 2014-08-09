@@ -1,0 +1,113 @@
+==================================================================
+Human Activity Recognition Using Smartphones Dataset
+CODEBOOK
+==================================================================
+
+The output.txt file shows the Mean and Standard deviation of X (location) of 30 test subjects performing 6 different tasks
+
+Column 1 "activity"
+
+List of string, labels corresponding to activities. 
+"1 WALKING"
+"2 WALKING_UPSTAIRS"
+"3 WALKING_DOWNSTAIRS"
+"4 SITTING"
+"5 STANDING"
+"6 LAYING"
+
+Column 2 "subject number"
+List of integers from 1 to 30 corresponding to subject number
+
+Column 3 "mean of X"
+Mean of X collected from the Samsung S2
+
+Column 4 "standard dev of X"
+Standard deviation of X collected from the Samsung S2
+
+
+
+
+======
+Variables used in the code
+
+
+Trainset: 
+List of 3 file locations for training set
+
+Testset
+List of 3 file locations for Test set
+
+dir
+Location of Samsung location files
+
+x1
+Training set data for location of test subjects as they perform various tasks
+
+x2
+Test set data for location of test subjects as they perform various tasks
+
+x
+Merge of x1 and x2
+
+y1
+List of integers corresponding to activities subjects were asked to perform in the training set
+"1 WALKING"
+"2 WALKING_UPSTAIRS"
+"3 WALKING_DOWNSTAIRS"
+"4 SITTING"
+"5 STANDING"
+"6 LAYING"
+
+y2
+List of integers corresponding to activities subjects were asked to perform in the testing set
+"1 WALKING"
+"2 WALKING_UPSTAIRS"
+"3 WALKING_DOWNSTAIRS"
+"4 SITTING"
+"5 STANDING"
+"6 LAYING"
+
+y
+Merged of y1 and y2
+
+y_labelled
+List of string, labels corresponding to activities. 
+"1 WALKING"
+"2 WALKING_UPSTAIRS"
+"3 WALKING_DOWNSTAIRS"
+"4 SITTING"
+"5 STANDING"
+"6 LAYING"
+
+subjects1
+List of integers from 1 to 30 corresponding to subject number in the training set
+
+subjects2
+List of integers from 1 to 30 corresponding to subject number in the test set
+
+subjects
+Merge of subjects 1 and subjects 2
+
+samsung_data
+Data frame with x, y_labelled and subjects
+
+mean_by_subject
+Mean of X by subject number
+
+sd_by_subject
+Standard deviation of X by subject number
+
+mean_by_activity
+Mean of X by activity label
+
+sd_by_activity
+Standard deviation of X by activity label
+
+all_means
+Mean of X by both activity label and subject number 
+
+all_sds
+Standard deviation of X by both activity label and subject number
+
+all
+Mean and standard deviation of X by both activity label and subject number
